@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style>
+        form {
+            padding: 0 15px;
+        }
+        textarea {
+            margin: 15px 0;
+            height: auto;
+            padding: .25rem .5rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+            display: block;
+            width: 300px;
+            font-weight: 400;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        input[type="checkbox"] {
+
+        }
+        button {
+            cursor: pointer;
+            background-color: #33b5e5!important;
+            color: #fff;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+            padding: .5rem 2rem;
+            font-size: .81rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+            margin: .375rem;
+            border: 0;
+            border-radius: .125rem;
+            text-transform: uppercase;
+            white-space: normal;
+            word-wrap: break-word;
+            float:right;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+<form class="clearfix" id="phraseLogForm">
+    <h3>New Phrase</h3>
+    <textarea rows="3" type="text" name="phrase" placeholder="Phrase"></textarea>
+    <textarea rows="3" type="text" name="mean" placeholder="Meaning"></textarea>
+    <input type="checkbox" name="auto_sync"> Auto sync
+    <br>
+    <hr>
+    <button type="submit">Save</button>
+</form>
+
+<script src="../scripts/phrase_log.js"></script>
+</body>
+</html>

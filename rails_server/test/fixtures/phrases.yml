@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pharse: MyString
+  mean: MyString
+  user_id: 1
+
+two:
+  pharse: MyString
+  mean: MyString
+  user_id: 1

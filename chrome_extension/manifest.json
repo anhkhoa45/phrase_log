@@ -1,0 +1,42 @@
+{
+  "name": "phrase_log",
+  "version": "1.0",
+  "description": "Chrome extension for logging phrases while browsing web!",
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popups/phrase_log.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Toggle phrase log"
+    }
+  },
+  "manifest_version": 2
+}
